@@ -30,14 +30,19 @@ grade_desc(78)
 
 // 2.   Write a function that prints out multiples of 10 up to a given input (argument)
 
-function multiples_ten(multiple,num){
+console.log("----------------------------------------------------------------------");
+
+
+function multiples(multiple,num){
     for(let i=multiple;i<=num;i++){
         if(i%multiple==0){
             console.log(i)
         }
     }
 }
-multiples_ten(10,50)
+multiples(10,50)
+
+console.log("----------------------------------------------------------------------");
 
 
 // 3.   Write a function that takes bill amount and item price and says how many quarters they'd get in return
@@ -47,7 +52,9 @@ function count_quarters(bill_amt,itm_price){
     change_ret *= 4;
     return change_ret;
 }
-console.log(count_quarters(10,7));
+console.log("No of quarters : "+count_quarters(10,7));
+
+console.log("----------------------------------------------------------------------");
 
 //4.    Write a function that prints out how many bills you would recieve in change after paying a certain amount.  Return in as large denominations as possible. Parameters should be amount paind and amount cost
 
@@ -68,7 +75,7 @@ console.log(count_quarters(10,7));
     }
     console.log("No. of bills received in change : "+count_bills(100,6));
 
-
+    console.log("----------------------------------------------------------------------");
 
 // 5.   Write a program that uses console.log to print all the numbers from 1 to 100 with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead. When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
     
